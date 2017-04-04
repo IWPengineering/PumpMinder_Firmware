@@ -24,9 +24,6 @@
 #include "utilities.h"
 
 
-
-
-
 // ****************************************************************************
 // *** PIC24F32KA302 Configuration Bit Settings *******************************
 // ****************************************************************************
@@ -254,7 +251,6 @@ void __attribute__((interrupt, auto_psv)) _CNInterrupt(void)
     // Always reset the interrupt flag
     IFS1bits.CNIF = 0;
 }
-
 
 void hoursToAsciiDisplay(int hours, int tickCounter, int ticksperhour)
 {
